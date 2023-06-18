@@ -23,9 +23,12 @@ public class Employee {
 	private String employeePhone;
 	private String employeeJobTitle;
 	
+	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
 	PetStore petStore;
+
+	
 }
